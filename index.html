@@ -2,6 +2,7 @@
 <html>
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+<script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-assets>
 	    <video id="slcqr4" autoplay loop="true" muted="true" src="slcqr4.mp4"></video>
@@ -10,7 +11,8 @@
     <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
       <!-- 今回作成した『.patt』ファイルを読み込む -->
       <a-marker type='pattern' url='slcqr4.patt'>
-	      <a-video src="#slcqr4" width="5" height="9.5" position="0 0 0" rotation="270 0 0" play="true"></a-video>
+	      <a-video src="#slcqr4" width="5" height="9.5" position="0 0 0" rotation="270 0 0" play="true"
+		      link="href: https://store.iketei.jp/products/detail.php?product_id=4101; title: SILVERLAKECLUB; image: #slcqr4"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
